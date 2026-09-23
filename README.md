@@ -18,6 +18,10 @@ A partir da versão 5.0.7, o Monitor consulta este repositório automaticamente,
 
 Quando houver uma versão nova, o painel destaca a atualização. Escolha **Atualizar agora** para baixar o pacote verificado e abrir o instalador. A instalação ainda requer a confirmação normal do Windows. **Mais tarde / fechar** mantém a versão atual funcionando.
 
+A partir da 5.0.9, uma instalação existente é atualizada sem repetir a seleção do atalho ou de direitos de administrador. O Monitor reutiliza as configurações e permissões salvas. A primeira instalação continua mostrando a configuração inicial. A confirmação de administrador do Windows ainda pode aparecer.
+
+O navegador pode avisar que o arquivo é pouco baixado. Este protótipo ainda não possui assinatura Authenticode de um publicador reconhecido. A assinatura do registro de atualização não elimina avisos de reputação do navegador ou do Windows.
+
 O registro de atualização usa assinatura RSA-SHA256 e inclui a verificação SHA-256 do instalador. Essa assinatura de atualização não substitui a assinatura Authenticode/reputação do executável no Windows.
 
 ## Piloto de atualização
