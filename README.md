@@ -12,7 +12,15 @@ Monitor de disponibilidade para computadores dedicados ao Controle de Acesso EVO
 
 Não é necessário desinstalar a versão anterior para atualizar no mesmo usuário. O instalador aproveita as configurações existentes. A execução com direitos de administrador vem selecionada quando a conta permite.
 
-## Atualizações
+## Verificação e ajuda ao cliente
+
+Na versão 5.0.10, use **Configurações → Verificar EVO a cada (segundos)** para escolher de 1 a 30 segundos. O padrão é 5 segundos. Na atualização de versões anteriores, o antigo padrão de 2 segundos passa a 5; outros intervalos personalizados são preservados. Os prazos de reabertura e recuperação de foco são configurações separadas.
+
+O painel distingue **Monitor ativo às** de **Última verificação do EVO**. Durante a pausa, o Monitor confirma que está ativo, mas a verificação do EVO fica suspensa.
+
+O botão **Preciso de ajuda** mostra orientações conforme o resultado atual, com atalhos para conferir a configuração, retomar o monitoramento, recuperar a janela ou preparar um diagnóstico. Uma abertura em andamento não gera uma nova tentativa pela ajuda. As observações do processo do EVO não comprovam o funcionamento da catraca ou da rede.
+
+## Novas versões
 
 A partir da versão 5.0.7, o Monitor consulta este repositório automaticamente, aproximadamente a cada seis horas. Você pode usar **Verificar atualizações** no painel ou no menu junto ao relógio.
 
