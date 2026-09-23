@@ -12,6 +12,12 @@ Monitor de disponibilidade para computadores dedicados ao Controle de Acesso EVO
 
 Não é necessário desinstalar a versão anterior para atualizar no mesmo usuário. O instalador aproveita as configurações existentes. A execução com direitos de administrador vem selecionada quando a conta permite.
 
+## Reabrir pelo menu Iniciar
+
+A partir da 5.0.16, a instalação/atualização cria o atalho **Monitor EVO** no menu Iniciar do usuário. Pressione Windows e pesquise esse nome para abrir o painel. Se usou **Encerrar monitor**, clique em **Executar / retomar** para voltar às verificações.
+
+O atalho é atualizado quando a versão muda e após restaurar a versão anterior. Não depende do instalador baixado na pasta Downloads. A desinstalação remove somente o atalho pertencente ao Monitor.
+
 ## Verificação e ajuda ao cliente
 
 Na versão 5.0.10, use **Configurações → Verificar EVO a cada (segundos)** para escolher de 1 a 30 segundos. O padrão é 5 segundos. Na atualização de versões anteriores, o antigo padrão de 2 segundos passa a 5; outros intervalos personalizados são preservados. Os prazos de reabertura e recuperação de foco são configurações separadas.
