@@ -34,6 +34,22 @@ A atualização guarda os arquivos anteriores e as configurações. Falhas da tr
 
 Essa opção precisa de uma instalação anterior registrada neste computador. Não há detecção automática de toda regressão funcional. Os testes de recuperação foram isolados e simulados; a validação em computador cliente faz parte do piloto.
 
+## Equipamentos de rede (5.0.12)
+
+O módulo é opcional. Abra **Equipamentos de rede → Adicionar equipamento**. Cadastre um fabricante/modelo se necessário e selecione-o na lista. Informe um nome para o equipamento, IP esperado e a porta TCP realmente usada; marque **Ativar monitoramento**. É possível cadastrar até 32 dispositivos, com intervalo individual (padrão 30 segundos). O catálogo evita nomes duplicados por espaços, caixa e acentos.
+
+O Monitor identifica automaticamente interfaces e máscaras IPv4 locais, tanto com IP fixo quanto DHCP. Verifica TCP, ping e, quando possível, MAC local. **Porta acessível** não significa catraca operando corretamente; **sem resposta** não comprova defeito físico ou causa na infraestrutura.
+
+Para procurar um IP alterado, informe o MAC da etiqueta/configuração ou use **Usar MAC observado** após conferir uma leitura recente no IP esperado. Depois de três falhas, a busca automática pode procurar essa identidade nas redes locais. Ela não altera o endereço cadastrado nem configurações do Windows, EVO ou aparelho.
+
+Use **Verificar / buscar agora** para solicitar uma nova leitura e **Cancelar busca** para interromper a procura. A pausa de manutenção também suspende o módulo. Novos resultados dependem do Monitor em execução; o painel informa quando as observações ficam antigas.
+
+A busca usa até 256 endereços por interface e 1024 por rodada, quatro consultas simultâneas e cerca de 90 segundos. Sua repetição automática respeita 15 minutos por equipamento. Redes grandes e buscas que atingem limites são explicitamente parciais. ARP/MAC se aplica ao segmento local e não identifica equipamentos atrás de roteadores. Uma chamada do Windows já iniciada pode levar alguns segundos para concluir após o cancelamento.
+
+O diagnóstico agora começa com **Resumo para suporte**, seguido dos detalhes técnicos. O painel ajusta os textos e permite rolar em janelas menores. A ajuda guiada e a integração com IA ficam para uma etapa futura.
+
+As verificações desta entrega usaram redes/sondagens simuladas e telas renderizadas; ainda é necessária validação piloto com os equipamentos reais. O cadastro de equipamentos participa da recuperação de atualização.
+
 ## Novas versões
 
 A partir da versão 5.0.7, o Monitor consulta este repositório automaticamente, aproximadamente a cada seis horas. Você pode usar **Verificar atualizações** no painel ou no menu junto ao relógio.
