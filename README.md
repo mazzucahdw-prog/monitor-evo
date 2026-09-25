@@ -7,7 +7,7 @@ Monitor de disponibilidade para computadores dedicados ao Controle de Acesso EVO
 [Baixar MonitorEVO.exe](https://github.com/mazzucahdw-prog/monitor-evo/releases/latest/download/MonitorEVO.exe)
 
 1. Execute o arquivo e escolha **Instalar / atualizar**.
-2. Confira o atalho do EVO e confirme a instalação e a permissão do Windows.
+2. Confirme a instalação e a permissão do Windows. Configurar o controle antigo é opcional; o novo controle pode ser configurado depois no painel.
 3. O painel abre após a instalação. O monitor permanece junto ao relógio do Windows.
 
 Não é necessário desinstalar a versão anterior para atualizar no mesmo usuário. O instalador aproveita as configurações existentes. A execução com direitos de administrador vem selecionada quando a conta permite.
@@ -58,11 +58,15 @@ As verificações desta entrega usaram redes/sondagens simuladas e telas renderi
 
 ## Novas versões
 
-A partir da versão 5.0.7, o Monitor consulta este repositório automaticamente, aproximadamente a cada seis horas. Você pode usar **Verificar atualizações** no painel ou no menu junto ao relógio.
+A partir da **5.0.29**, o Monitor instalado consulta novas versões ao iniciar e instala em segundo plano, com as permissões de administrador que já possui. Não é necessário preencher novamente o formulário. A consulta e o download não pausam o monitoramento; a troca reinicia somente o Monitor e preserva as configurações.
 
-Quando houver uma versão nova, o painel destaca a atualização. Escolha **Atualizar agora** para baixar o pacote verificado e abrir o instalador. A instalação ainda requer a confirmação normal do Windows. **Mais tarde / fechar** mantém a versão atual funcionando.
+Se a consulta, o download ou a validação falhar, a versão atual continua funcionando e a próxima tentativa ocorre após uma hora. Quando está atualizado, as consultas se repetem aproximadamente a cada seis horas. Durante manutenção, a instalação é adiada.
 
-A partir da 5.0.9, uma instalação existente é atualizada sem repetir a seleção do atalho ou de direitos de administrador. O Monitor reutiliza as configurações e permissões salvas. A primeira instalação continua mostrando a configuração inicial. A confirmação de administrador do Windows ainda pode aparecer.
+Se faltar permissão de administrador ou o Windows bloquear o atualizador independente, use **Verificar atualizações → Atualizar agora**. Não há pedido automático de elevação. Para receber a 5.0.29 a partir de uma versão anterior, use esse botão uma vez; o comportamento automático vale a partir da nova versão.
+
+Se o novo agente não confirmar sua inicialização, o instalador tenta restaurar a versão anterior. Uma versão revertida ou com instalação automática incerta fica bloqueada para reinstalação automática do mesmo pacote. Uma versão posterior pode ser instalada; uma nova tentativa manual continua disponível. Essa verificação não detecta toda regressão funcional: **Restaurar versão anterior** permanece disponível no painel.
+
+A correção específica de tela cheia por F11 ainda está em validação e não está incluída na 5.0.29. O modo quiosque/privado não foi reintroduzido.
 
 O navegador pode avisar que o arquivo é pouco baixado. Este protótipo ainda não possui assinatura Authenticode de um publicador reconhecido. A assinatura do registro de atualização não elimina avisos de reputação do navegador ou do Windows.
 
