@@ -56,6 +56,14 @@ O diagnóstico agora começa com **Resumo para suporte**, seguido dos detalhes t
 
 As verificações desta entrega usaram redes/sondagens simuladas e telas renderizadas; ainda é necessária validação piloto com os equipamentos reais. O cadastro de equipamentos participa da recuperação de atualização.
 
+## Inicialização do novo controle (5.0.30)
+
+Em **Novo controle de acesso**, ajuste **Espera inicial após detectar o aplicativo**: padrão de **300 segundos (5 minutos)**, configurável de 0 a 300. Com o aplicativo monitorado, conta após encontrar o processo; reinicia a contagem se ele fechar ou reiniciar antes do fim. Sem monitorar o aplicativo, conta desde a primeira verificação. Zero remove só a espera extra.
+
+Durante essa espera, o Monitor não abre nem age na página. Ela vale a cada início do Monitor, inclusive após atualização, e não se repete a cada reabertura da página. A presença do processo e o fim do prazo não comprovam saúde do serviço; uma página aberta pelo próprio aplicativo ou pelo Windows não é bloqueada.
+
+Passe o mouse sobre as opções e tempos dessa tela para ler as explicações. A espera inicial é diferente da frequência de verificação, da primeira recarga e do retorno ao primeiro plano.
+
 ## Novas versões
 
 A partir da **5.0.29**, o Monitor instalado consulta novas versões ao iniciar e instala em segundo plano, com as permissões de administrador que já possui. Não é necessário preencher novamente o formulário. A consulta e o download não pausam o monitoramento; a troca reinicia somente o Monitor e preserva as configurações.
